@@ -88,3 +88,61 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 > Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu_x = e^{\mu + \frac{ \sigma^2}{2}}" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2_x = (e^{\sigma^2}-1)e^{2\mu+\sigma^2}" title="product rule" /><br>
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\sigma x \sqrt{2\pi}} exp[ \frac{-1}{2} (\frac{\ln{x}- \mu}{\sigma})^2] " title="product rule" /> <br>
+
+---
+
+## Joint Probability
+
+---
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; f(x,y) = P(X=x,Y=y) " title="product rule" /> <br>
+
+## Marginal Functions (JP)
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; f(x)_{x} = P(X=x) = \sum_{y} P(X=x,Y=y) " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; f(x,y) = f(x)_{x} f(y)_{y} " title="product rule" />
+
+> If independant<br>
+
+## Covariance (JP)
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = \sigma_{xy} = E[ (X-\mu_x) (Y-\mu_y)] " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = \sum_{x} \sum_{y} (x-\mu_x) (y-\mu_y) f(x,y)" title="product rule" />
+
+> For discret
+
+<br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = \int_{x} \int_{y} (x-\mu_x) (y-\mu_y) f(x,y)" title="product rule" />
+
+> For continuous
+
+<br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = E[XY] - \mu_x \mu_y " title="product rule" /> <br>
+
+## Correlation
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Corr(x,y) = P_{xy} = \frac{\sigma_{xy}}{\sigma_x\sigma_y} " title="product rule" /> <br>
+
+### If independant (JP)
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = Corr(x,y) = 0 " title="product rule" /> <br>
+
+proof
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; E[XY] = \sum_x \sum_y xy f(x,y)" title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; E[XY] = \sum_x \sum_y xy f(x)_x f(y)_y" title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; E[XY] = \sum_x x f(x)_x \sum_y y f(y)_y" title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; E[XY] = \mu_y \mu_y " title="product rule" /> <br>
+<br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = E[XY] - \mu_x \mu_y " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Cov(x,y) = \mu_x \mu_y - \mu_x \mu_y = 0" title="product rule" /> <br>
+<br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Corr(x,y) = P_{xy} = \frac{\sigma_{xy}}{\sigma_x\sigma_y} " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; Corr(x,y) = P_{xy} = \frac{0}{\sigma_x\sigma_y}  = 0" title="product rule" /> <br>
+
+## Conditional Probability (JP)
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; g(x|y) = \frac{f(x,y)}{f(y)_y} " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; P(a<Y<b|x) = \sum_{a<y<b} g(y|x)" title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; E[u(Y)|X=x] = \sum_{y}u(y)  g(y|x)" title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space; \mu_{y|x} = E[Y|X=x] = \sum_{y} y  g(y|x)" title="product rule" /> <br>

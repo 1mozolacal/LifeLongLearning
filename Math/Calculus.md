@@ -19,3 +19,9 @@
 > By Parts
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;\int fg' = fg - \int f'g" title="product rule" />
+
+### Summation
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\sum_{i=1}^{n} i = \frac{n(n+1)}{2}" title="product rule" /><br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}" title="product rule" /><br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;\sum_{i=1}^{n} i^3 = (\frac{n(n+1)}{2})^2" title="product rule" /><br>
