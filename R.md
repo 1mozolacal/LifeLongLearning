@@ -29,8 +29,8 @@ pchisq(14.06714, df=7, ncp = 0, lower.tail = TRUE, log.p = FALSE)
 
 ```r
 # Used to find the probability from negative infinity to xValue
-# pnorm(xValue,mean= mu, df = sigma)
+# pnorm(xValue,mean= mu, sd = sigma)
 
-pnorm(0,mean=0,df = 1)#standard normal dis
+pnorm(0,mean=0,sd = 1)#standard normal dis
 # result -> 0.5
 ```
