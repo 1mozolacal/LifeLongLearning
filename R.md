@@ -1,5 +1,7 @@
 # R
 
+## Stats related
+
 ### Binomial
 
 ```r

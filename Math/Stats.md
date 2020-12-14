@@ -13,6 +13,9 @@ This can be proven with taylor series
 
 ## Geometric distribution
 
+> The number of trails that are requried for a single success
+
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \frac{(1}{p}" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \frac{(1+q)}{p^2}" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = q^{x-1}p" title="product rule" />
 <br><img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(t) = \frac{pe^t}{1 - qe^t}" title="product rule" />
 
@@ -20,19 +23,31 @@ This can be proven with taylor series
 
 ## Binomial Distribution
 
-n number of trials that is either success or failure. Denoted by b(n,p) or B(n,p)
+> n number of trials that is either success or failure. Denoted by b(n,p) or B(n,p)
 
-> Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = np" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = np(1 - p)" title="product rule" /><br>
-
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = np" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = np(1 - p)" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = { n \choose x} p^x (1 - p)^{n-x}" title="product rule" />
+<br><img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(t) = (pe^t + (1 - p))^n" title="product rule" />
 
 ---
 
 ## Hypergeometric distribution
 
+> Selection of cards without replacement
+
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = ?" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = ?" title="product rule" /><br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{ { m \choose x } { N-m \choose n-x} }{ { N \choose n } }" title="product rule" />
+<br><img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(t) = ?" title="product rule" />
+
 ---
 
 ## Possion Distribution
+
+> The number of times something occures in a given time (typos per minute)
+
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \lambda" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \lambda" title="product rule" /><br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{ e^{- \lambda} \lambda^{x} }{ x! }" title="product rule" />
+<br><img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(t) = e^{\lambda(e^t -1)}" title="product rule" />
 
 ---
 
@@ -46,7 +61,7 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Exponential Distribution
 
-> Mean and Var<br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu =  \theta" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 =  \theta^2" title="product rule" /><br>
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu =  \theta" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 =  \theta^2" title="product rule" /><br>
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\theta}e^{-x/\theta}" title="product rule" /> where <img src="https://latex.codecogs.com/svg.latex?\theta = \frac{1}{\lambda}" title="product rule" />
 
@@ -56,9 +71,9 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Gamma Distribution
 
-> gamma function<br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space; \Gamma (t) = \int_0^{\infty} y^{t-1} e^{-y} dy" title="product rule" /> <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Gamma(t) = (t-1)!" title="product rule" /> For positive t.
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space; \Gamma (t) = \int_0^{\infty} y^{t-1} e^{-y} dy" title="product rule" /> <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Gamma(t) = (t-1)!" title="product rule" /> For positive t.
 
-> Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \alpha \theta" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \alpha \theta^2" title="product rule" /><br>
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \alpha \theta" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \alpha \theta^2" title="product rule" /><br>
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\gamma (\alpha ) \theta ^\alpha} x^{\alpha-1} e^{-x/\theta}" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(x) = \frac{1}{ ( 1 - \theta t)^\alpha} " title="product rule" /> where t < 1/theta
@@ -67,7 +82,7 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Chi-square
 
-> Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = r" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = 2r" title="product rule" /><br>
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = r" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = 2r" title="product rule" /><br>
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\gamma ( \frac{r}{2} ) 2 ^ \frac{r}{2}} x^{\frac{r}{2} -1} e^{-x/2}" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(x) = \frac{1}{ ( 1 - 2 t)^\frac{r}{2}} " title="product rule" /> where t < 1/2
@@ -76,8 +91,7 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Standard Distribution
 
-> Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \mu" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \sigma^2" title="product rule" /><br>
-
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \mu" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \sigma^2" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\sigma \sqrt{2\pi}} exp[ -1/2] " title="product rule" /> <br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(x) = e^{\mu t + \frac{\sigma^2 t^2}{2}} " title="product rule" />
 
@@ -85,8 +99,7 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Lognormal Distribution
 
-> Mean and Var <br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu_x = e^{\mu + \frac{ \sigma^2}{2}}" title="product rule" /><br> > <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2_x = (e^{\sigma^2}-1)e^{2\mu+\sigma^2}" title="product rule" /><br>
-
+<br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu_x = e^{\mu + \frac{ \sigma^2}{2}}" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2_x = (e^{\sigma^2}-1)e^{2\mu+\sigma^2}" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\sigma x \sqrt{2\pi}} exp[ \frac{-1}{2} (\frac{\ln{x}- \mu}{\sigma})^2] " title="product rule" /> <br>
 
 ---
