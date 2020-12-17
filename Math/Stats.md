@@ -71,16 +71,19 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 
 ## Gamma Distribution
 
+> Waiting the the alpha th event to occure. Theta is 1/lambda. Exoponetial is special case of gamma where alpha is 1.
+
 <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space; \Gamma (t) = \int_0^{\infty} y^{t-1} e^{-y} dy" title="product rule" /> <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\Gamma(t) = (t-1)!" title="product rule" /> For positive t.
 
 <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \alpha \theta" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \alpha \theta^2" title="product rule" /><br>
-
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\gamma (\alpha ) \theta ^\alpha} x^{\alpha-1} e^{-x/\theta}" title="product rule" /><br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(x) = \frac{1}{ ( 1 - \theta t)^\alpha} " title="product rule" /> where t < 1/theta
 
 ---
 
 ## Chi-square
+
+> special case of the gamma function where theta is 2 and alpha = r/2.
 
 <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = r" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = 2r" title="product rule" /><br>
 
@@ -92,7 +95,7 @@ Where P is the percentile. Example 0.25 would be the first quartile.
 ## Standard Distribution
 
 <br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\mu = \mu" title="product rule" /><br> <img src="https://latex.codecogs.com/svg.latex?\Large&space;\sigma^2 = \sigma^2" title="product rule" /><br>
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\sigma \sqrt{2\pi}} exp[ -1/2] " title="product rule" /> <br>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;f(x) = \frac{1}{\sigma \sqrt{2\pi}} exp[ \frac{-1}{2} (\frac{x-\mu}{\sigma})^2] " title="product rule" /> <br>
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;M_x(x) = e^{\mu t + \frac{\sigma^2 t^2}{2}} " title="product rule" />
 
 ---

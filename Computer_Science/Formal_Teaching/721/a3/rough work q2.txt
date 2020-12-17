@@ -1,0 +1,17 @@
+
+Same prof for operating systems & networks
+
+artificial intelligence (2+2)
+operating systems (2+1)
+web design (3+0)
+data structures(2+1)
+algorithms (2+1)
+networks (1+1).
+
+Have to implement
+-two_consecutive_hours([T1,T2])
+-same_day(List)
+-available(List)
+-in_conflict(List1,List2)
+
+taken([mon,12,r1]). taken([mon,1,r1]). taken([mon,1,r4]). taken([mon,2,r4]).taken([tues,9,r2]). taken([tues,10,r2]). taken([tues,3,r1]). taken([tues,4,r1]).taken([wed,10,r3]). taken([wed,11,r3]). taken([wed,12,r3]). taken([wed,1,r3]).taken([thurs,12,r4]). taken([thurs,1,r4]).taken([fri,3,r1]). taken([fri,4,r1]).

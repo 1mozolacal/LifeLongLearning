@@ -1,0 +1,219 @@
+
+INSERT ALL
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (1,'Yvonne Cook','dui, semper et,',TO_TIMESTAMP('2019-12-13 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (2,'Zane Sloan','felis orci,',TO_TIMESTAMP('2020-01-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (3,'Ariel Barnett','iaculis enim,',TO_TIMESTAMP('2020-10-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (4,'Yvette Randolph','imperdiet non,',TO_TIMESTAMP('2019-11-28 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (5,'Edward Fuller','euismod in, dolor.',TO_TIMESTAMP('2019-06-25 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (6,'Dorian Hancock','Nam ac',TO_TIMESTAMP('2019-11-09 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (7,'Hillary Mcconnell','Nullam suscipit, est ac',TO_TIMESTAMP('2020-09-21 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (8,'Dylan Tillman','eleifend nec, malesuada ut,',TO_TIMESTAMP('2020-04-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (9,'Silas Gordon','imperdiet ullamcorper. Duis at',TO_TIMESTAMP('2020-07-19 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (10,'Octavia Potter','lacinia at, iaculis',TO_TIMESTAMP('2019-02-24 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (11,'Ebony Harrington','elit pede, malesuada',TO_TIMESTAMP('2019-11-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (12,'Lucy Fisher','cursus et, eros. Proin',TO_TIMESTAMP('2019-09-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (13,'Peter Valentine','Nunc mauris. Morbi non',TO_TIMESTAMP('2019-12-16 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (14,'Hedley Keith','lectus quis massa.',TO_TIMESTAMP('2019-11-07 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (15,'Francesca Blake','sagittis felis. Donec',TO_TIMESTAMP('2019-02-24 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (16,'Lara Olsen','accumsan convallis,',TO_TIMESTAMP('2019-10-14 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (17,'Tanner Barker','mollis vitae,',TO_TIMESTAMP('2020-07-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (18,'Zephr Herman','Cras dictum',TO_TIMESTAMP('2019-10-25 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (19,'Jorden Bryan','ante dictum',TO_TIMESTAMP('2020-07-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserAccount (userId,Username,password,lastUpdated) VALUES (20,'Elizabeth Stanton','dictum augue malesuada',TO_TIMESTAMP('2019-11-15 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+SELECT * FROM dual;
+
+INSERT ALL
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (1,TO_TIMESTAMP('2020-10-28 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'Find them animals',2)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (2,TO_TIMESTAMP('2021-01-29 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'lacus.',9)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (3,TO_TIMESTAMP('2020-10-07 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'ipsum',4)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (4,TO_TIMESTAMP('2020-09-22 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'venenatis a, magna. Lorem',8)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (5,TO_TIMESTAMP('2021-01-16 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'tortor nibh sit',2)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (6,TO_TIMESTAMP('2021-01-18 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'elit',1)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (7,TO_TIMESTAMP('2021-02-07 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'adipiscing ligula. Aenean',9)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (8,TO_TIMESTAMP('2021-03-09 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'vulputate mauris sagittis placerat. Cras dictum ultricies ligula.',8)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (9,TO_TIMESTAMP('2020-12-28 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'Cras vulputate velit eu',2)
+INTO Event (eventId,eventDate,eventDescription,hostedBy)  VALUES (10,TO_TIMESTAMP('2020-05-13 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),'erat semper rutrum. Fusce dolor quam, elementum',7)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (1,'Omnivore','Great-Horned Owl','massa. Integer vitae nibh. Donec','Bird')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (2,'Herbivore','Northern Cardinal','ligula consectetuer rhoncus. Nullam','Bird')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (3,'Herbivore','Eastern Cottontail Rabbit','sociis natoque penatibus et magnis dis','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (4,'Carnivore','Grey Wolf','Aliquam nisl. Nulla eu neque pellentesque massa lobortis','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (5,'Carnivore','Coyote','Cras vulputate velit eu','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (6,'Herbivore','Whitetail Dear','iaculis, lacus','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (7,'Omnivore','American Black Bear','nulla. Integer','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (8,'Insectivore','Skunk','metus sit amet ante. Vivamus non lorem vitae odio sagittis','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (9,'Omnivore','Red Fox','sed orci lobortis augue scelerisque mollis. Phasellus libero','Mammal')
+INTO Animal (animalId,diet,name,description,animalType)  VALUES (10,'Omnivore','Red-Tailed Hawk','Praesent interdum ligula eu enim. Etiam imperdiet dictum magna.','Bird')
+SELECT * FROM dual;
+
+INSERT ALL
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (1,'Spotted Jewelweed','Impatiens Capensis',236,'blandit at,',0,'Half Sun','High','Spade','Flower')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (2,'Aarons Beard','Hypericum calycinum',5,'massa. Quisque porttitor eros nec tellus. Nunc lectus',0,'Full Sun','Moderate','Small','Flower')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (3,'Black Raspberry','Rubus Occidentalis',204,'mauris. Integer sem elit,',1,'Half Sun','Moderate','Jagged','Berry')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (4,'Tatarian Honeysuckle','Lonicera Tatarica',174,'montes, nascetur ridiculus mus. Proin vel',1,'Shade','Moderate','Spade','Berry')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (5,'Chives','Allium Schoenoprasum',95,'faucibus orci luctus et ultrices posuere',0,'Shade','Low','Long','Herb')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (6,'Mayapple','Podophyllum Peltatum',254,'nunc est, mollis non, cursus non, egestas a, dui. Cras',0,'Shade','Moderate','Long','Flower')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (7,'Deadly Nightshade','Atropa Belladonna',117,'nunc risus varius orci,',1,'Half Sun','High','Spade','Berry')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (8,'Common Thyme','Thymus Vulgaris',38,'amet lorem semper auctor. Mauris vel turpis.',0,'Full Sun','Low','Small','Herb')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (9,'Cow-Parsnip','Heracleum Maximum',67,'erat. Sed nunc',1,'Half Sun','Moderate','Jagged','Flower')
+INTO Plant (plantId,name,scientificName,averageHeight,plantDescription,fruitBearing,lightRequirement,waterRequirement,leafType,plantType)  VALUES (10,'Marsh Violet','Viola Palustris',261,'ullamcorper.',0,'Shade','High','Spade','Flower')
+SELECT * FROM dual;
+
+INSERT ALL
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (1,'in consequat enim diam vel arcu. Curabitur ut','torquent',-75.88982, -160.13331)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (2,'tincidunt nibh. Phasellus nulla. Integer vulputate,','tempor, est',35.09532, 148.52671)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (3,'condimentum.','Sed id',-46.57596, 26.37275)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (4,'Suspendisse','eu neque pellentesque',53.23073, -41.58436)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (5,'cursus a, enim. Suspendisse aliquet, sem ut cursus','vel est tempor',-9.87481, -81.75052)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (6,'neque. Nullam ut nisi a odio semper','morbi tristique senectus',58.18561, 59.742)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (7,'parturient montes, nascetur ridiculus','augue',-20.58234, -67.65574)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (8,'metus urna convallis erat, eget tincidunt dui augue eu','ligula.',-32.92348, 72.25927)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (9,'ante dictum mi, ac mattis velit justo nec ante.','Phasellus nulla. Integer',56.41999, 75.07246)
+INTO Location (locationId,climate,commonName,latLoc,longLoc)  VALUES (10,'consectetuer rhoncus. Nullam','Morbi neque',62.56987, 10.14763)
+SELECT * FROM dual;
+
+INSERT ALL 
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (1,10,'diam at','neque sed',89.86319, 26.44465,TO_TIMESTAMP('2019-10-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-07-28 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),1)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (2,6,'nec, diam.','Proin ultrices. Duis volutpat nunc',37.96277, -83.11568,TO_TIMESTAMP('2020-09-06 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-02-06 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),4)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (3,1,'Morbi quis','Cras interdum. Nunc sollicitudin commodo ipsum.',-13.39207, 126.3195,TO_TIMESTAMP('2020-08-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-06-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),8)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (4,3,'leo. Morbi','nunc',-87.7458, 21.30702,TO_TIMESTAMP('2020-12-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-02-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),5)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (5,8,'elit, dictum','eget laoreet posuere, enim nisl elementum',89.55021, 81.79902,TO_TIMESTAMP('2020-11-02 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-11-23 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),5)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (6,5,'fringilla cursus','erat vitae risus. Duis a mi fringilla mi lacinia mattis.',10.42442, -35.31326,TO_TIMESTAMP('2020-01-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-08-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),10)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (7,10,'dictum magna.','Nullam nisl. Maecenas malesuada fringilla est. Mauris eu turpis.',-42.80607, 57.45208,TO_TIMESTAMP('2019-12-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-06-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),9)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (8,10,'torquent per','nunc est, mollis non, cursus non, egestas a, dui. Cras',-83.84806, 166.89059,TO_TIMESTAMP('2020-12-02 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-11-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),1)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (9,10,'Aliquam fringilla','Donec',20.47885, -76.24079,TO_TIMESTAMP('2020-01-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2018-06-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),9)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (10,3,'a, auctor','enim.',-13.12053, -134.66099,TO_TIMESTAMP('2020-01-09 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-02-13 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),4)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (11,7,'vestibulum. Mauris','Ut sagittis lobortis mauris. Suspendisse aliquet',-81.78222, -104.52563,TO_TIMESTAMP('2020-03-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-07-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),9)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (12,5,'a tortor.','dolor. Donec fringilla. Donec feugiat metus sit amet',62.27675, -13.68562,TO_TIMESTAMP('2019-05-12 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-07-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),9)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (13,5,'Suspendisse aliquet,','eros. Proin ultrices. Duis volutpat nunc',35.92838, -146.90405,TO_TIMESTAMP('2020-05-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-04-07 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),5)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (14,3,'arcu. Curabitur','ullamcorper, nisl arcu',-65.33893, 66.40632,TO_TIMESTAMP('2020-05-04 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-09-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),2)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (15,3,'Phasellus libero','magna. Phasellus dolor elit, pellentesque',44.56698, -52.71954,TO_TIMESTAMP('2019-03-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-07-02 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),4)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (16,5,'Donec egestas.','ultrices a, auctor',59.12118, 41.94476,TO_TIMESTAMP('2020-04-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-03-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),3)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (17,9,'id ante','elit sed',-19.80955, 53.65029,TO_TIMESTAMP('2020-05-02 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-04-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),10)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (18,8,'a ultricies','odio. Nam interdum enim non nisi. Aenean eget metus.',-88.75168, 151.0714,TO_TIMESTAMP('2019-06-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-01-28 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),7)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (19,7,'Nulla dignissim.','enim mi tempor lorem, eget mollis lectus',-82.71355, 63.34281,TO_TIMESTAMP('2020-09-04 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-11-07 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),3)
+INTO Sighting (sightId,sightedBy,title,notes,latLoc,longLoc,lastUpdated,timeRecorded,partOfEvent) VALUES (20,3,'bibendum fermentum','tellus, imperdiet non, vestibulum nec,',-25.28393, -33.04159,TO_TIMESTAMP('2020-03-04 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),TO_TIMESTAMP('2019-01-06 14:00:00', 'YYYY-MM-DD HH24:MI:SS'),10)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (5,11,TO_TIMESTAMP('2020-06-09 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (10,18,TO_TIMESTAMP('2020-05-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (3,20,TO_TIMESTAMP('2020-07-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (8,11,TO_TIMESTAMP('2019-06-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (9,11,TO_TIMESTAMP('2020-05-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (6,3,TO_TIMESTAMP('2020-01-01 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (7,17,TO_TIMESTAMP('2020-02-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (4,8,TO_TIMESTAMP('2020-07-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES (7,16,TO_TIMESTAMP('2019-07-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO UserSightingSaved (savedBy,sightingId,savedOn)  VALUES(4,7,TO_TIMESTAMP('2019-01-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+SELECT * FROM dual;
+
+
+INSERT ALL
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (1,1,2,'ipsum nunc id enim. Curabitur massa. Vestibulum accumsan neque et nunc. Quisque ornare tortor',TO_TIMESTAMP('2020-10-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (2,4,19,'egestas. Sed pharetra, felis eget varius ultrices, mauris ipsum porta elit, a feugiat tellus lorem',TO_TIMESTAMP('2020-08-09 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (3,2,16,'ac libero nec ligula consectetuer rhoncus. Nullam',TO_TIMESTAMP('2020-12-08 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (4,4,6,'penatibus et',TO_TIMESTAMP('2019-05-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (5,2,9,'in lobortis tellus justo sit amet nulla.',TO_TIMESTAMP('2020-04-05 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (6,5,18,'ut, molestie in, tempus eu, ligula. Aenean euismod mauris eu elit.',TO_TIMESTAMP('2020-02-03 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (7,8,15,'lobortis quam a felis ullamcorper viverra.',TO_TIMESTAMP('2019-09-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (8,7,8,'Integer sem elit, pharetra ut,',TO_TIMESTAMP('2020-06-02 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (9,4,16,'a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu.',TO_TIMESTAMP('2019-03-11 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+INTO SightingComment (commentID,createdBy,onSighting,content,postTime)  VALUES (10,6,12,'tellus. Suspendisse sed dolor. Fusce mi lorem,',TO_TIMESTAMP('2019-09-10 14:00:00', 'YYYY-MM-DD HH24:MI:SS'))
+SELECT * FROM dual;
+
+
+INSERT ALL
+INTO Attends (eventId,personId)  VALUES (6,6)
+INTO Attends (eventId,personId)  VALUES (2,5)
+INTO Attends (eventId,personId)  VALUES (7,10)
+INTO Attends (eventId,personId)  VALUES (2,7)
+INTO Attends (eventId,personId)  VALUES (9,10)
+INTO Attends (eventId,personId)  VALUES (9,8)
+INTO Attends (eventId,personId)  VALUES (7,2)
+INTO Attends (eventId,personId)  VALUES (7,4)
+INTO Attends (eventId,personId)  VALUES (7,1)
+INTO Attends (eventId,personId)  VALUES (5,9)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (1,1,5,1)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (2,2,15,0)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (3,3,6,1)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (4,4,18,1)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (5,5,7,0)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (6,6,15,0)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (7,7,2,1)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (8,8,8,0)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (9,9,18,1)
+INTO ConsumeAnimal (consumer,consumed,herdAttack,scavenger)  VALUES (10,10,18,0)
+SELECT * FROM dual;
+
+
+INSERT ALL
+INTO ConsumePlant (consumer,consumed)  VALUES (1,1)
+INTO ConsumePlant (consumer,consumed)  VALUES (2,2)
+INTO ConsumePlant (consumer,consumed)  VALUES (3,3)
+INTO ConsumePlant (consumer,consumed)  VALUES (4,4)
+INTO ConsumePlant (consumer,consumed)  VALUES (5,5)
+INTO ConsumePlant (consumer,consumed)  VALUES (6,6)
+INTO ConsumePlant (consumer,consumed)  VALUES (7,7)
+INTO ConsumePlant (consumer,consumed)  VALUES (8,8)
+INTO ConsumePlant (consumer,consumed)  VALUES (9,9)
+INTO ConsumePlant (consumer,consumed)  VALUES (10,10)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (1,'green',5,31.05062, 8.36977,0,7)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (2,'blue',5,-30.50794, -133.51595,0,10)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (3,'purple',5,-6.67841, -70.90922,0,9)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (4,'gray',1,-16.91843, -69.9179,1,9)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (5,'yellow',7,-33.66479, -134.76459,0,6)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (6,'white',3,36.7373, 83.82017,0,2)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (7,'orange',7,5.502, 161.07621,1,3)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (8,'maroon',4,14.3117, 159.29482,1,2)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (9,'red',2,25.79801, -21.95751,1,4)
+INTO Flag (flagId,colour,dangerLevel,latLoc,longLoc,type,referenceType)  VALUES (10,'black',6,69.56262, -23.59061,0,1)
+SELECT * FROM dual;
+
+
+INSERT ALL
+INTO Lives (plant,animal,location)  VALUES (10,1,9)
+INTO Lives (plant,animal,location)  VALUES (7,5,9)
+INTO Lives (plant,animal,location)  VALUES (6,7,9)
+INTO Lives (plant,animal,location)  VALUES (2,7,3)
+INTO Lives (plant,animal,location)  VALUES (4,5,4)
+INTO Lives (plant,animal,location)  VALUES (7,10,10)
+INTO Lives (plant,animal,location)  VALUES (9,1,4)
+INTO Lives (plant,animal,location)  VALUES (10,7,3)
+INTO Lives (plant,animal,location)  VALUES (2,2,6)
+INTO Lives (plant,animal,location)  VALUES (1,6,2)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (1,'eu','adipiscing, enim mi',14,2)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (2,'sem','eget, ipsum. Donec',16,4)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (3,'orci','lacus pede sagittis',10,3)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (4,'arcu','volutpat. Nulla dignissim.',3,4)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (5,'diam.','mollis nec, cursus',4,1)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (6,'justo','ligula. Nullam feugiat',16,2)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (7,'rhoncus.','varius ultrices, mauris',2,3)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (8,'ac','hendrerit id, ante.',11,4)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (9,'justo.','suscipit nonummy. Fusce',5,1)
+INTO AnimalSighting (sightId,seasonalBehavior,health,herdSize,animalType)  VALUES (10,'fermentum','non, feugiat nec,',9,2)
+SELECT * FROM dual;
+
+INSERT ALL
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (11,'ligula. Aenean euismod',28,'amet, risus.',1,3)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (12,'imperdiet non, vestibulum',147,'Curabitur',0,4)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (13,'rhoncus. Proin nisl',176,'fermentum',0,3)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (14,'Aenean gravida nunc',131,'accumsan',0,5)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (15,'erat eget ipsum.',248,'suscipit,',0,7)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (16,'et, euismod et,',225,'porta elit,',0,9)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (17,'convallis in, cursus',287,'rutrum.',0,2)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (18,'lectus justo eu',284,'lobortis',1,5)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (19,'ornare, lectus ante',130,'Cras',1,6)
+INTO PlantSighting (sightId,soil,height,health,flowering,plantType)  VALUES (20,'ac mattis ornare,',213,'quis, tristique ac,',0,1)
+SELECT * FROM dual;

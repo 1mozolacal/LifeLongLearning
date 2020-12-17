@@ -1,0 +1,37 @@
+Daniel Mezhibovski   500899282   Section 4
+Calvin Mozola        500909122   Section 5
+Cesar Argota         500882780   Section 6
+
+
+Checking if bigBox1 is in GMC:
+?- solve_problem(2, Plan).
+Plan = [load(bigBox1, gmc, memorialUnivNewfoundland), drive(gmc, stJohnAirport, memorialUnivNewfoundland, stJohn)]
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.02s cpu)
+
+
+Checking if bigBox1 is at stJohnAirport:
+?- solve_problem(3, Plan).
+Plan = [drive(gmc, memorialUnivNewfoundland, stJohnAirport, stJohn), load(bigBox1, gmc, memorialUnivNewfoundland), drive(gmc, stJohnAirport, memorialUnivNewfoundland, stJohn)]
+Yes (0.05s cpu, solution 1, maybe more)
+No (0.24s cpu)
+
+
+Checking if bigBox1 is in boeing747:
+?- solve_problem(5, Plan).
+Plan = [load(bigBox1, boeing747, stJohnAirport), unload(bigBox1, gmc, stJohnAirport), drive(gmc, memorialUnivNewfoundland, stJohnAirport, stJohn), load(bigBox1, gmc, memorialUnivNewfoundland), drive(gmc, stJohnAirport, memorialUnivNewfoundland, stJohn)]
+Yes (21.30s cpu, solution 1, maybe more)
+No (84.74s cpu)
+
+
+Checking if bigBox1 is at pearsonAirport:
+?- solve_problem(6, Plan).
+Plan = [fly(boeing747, stJohnAirport, pearsonAirport), load(bigBox1, boeing747, stJohnAirport), unload(bigBox1, gmc, stJohnAirport), drive(gmc, memorialUnivNewfoundland, stJohnAirport, stJohn), load(bigBox1, gmc, memorialUnivNewfoundland), drive(gmc, stJohnAirport, memorialUnivNewfoundland, stJohn)]
+Yes (530.50s cpu, solution 1, maybe more)
+
+
+Results Discussion:
+For each case, there is only one solution that fits the upper bound of actions, because of this there are no 
+redundancies. We had issues where the box would not load as a result of us not properly declaring
+a box as a box. However, once we figured that out, the problem solver worked very well.
+Tested on an Intel Core i5-8259U.

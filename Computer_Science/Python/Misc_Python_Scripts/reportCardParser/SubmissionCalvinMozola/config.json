@@ -1,0 +1,4 @@
+{
+    "pre": [],
+    "run": "python reportCardParser.py"
+}

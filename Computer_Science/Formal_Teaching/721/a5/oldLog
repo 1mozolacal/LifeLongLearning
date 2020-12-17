@@ -1,0 +1,85 @@
+		%% LOGISTICS DOMAIN %%
+/* Universal situations and fluents based planner  */
+:- dynamic at/3.
+/* This is necessary if rules with the same predicate in the head are not
+   consecutive in your program.
+*/ 
+
+% We are looking for a list of actions represented by a variable Plan
+% such that executing actions in Plan leads from the initial state 
+% to a reachable state where a goal condition is true.
+
+solve_problem(Bound,Plan)  :-  C0 is cputime,     % C0 is time when program starts %
+          max_length(Plan,Bound),          % Bound is the maximal length of Plan   %
+          reachable(S,Plan), 
+	      write(Plan),
+          write('\n'),
+          goal_state(S),           % A situation S must be a solution of the problem %
+          Cf is cputime, D is Cf - C0, nl,     % Cf is time when program finishes  %
+          write('Elapsed time (sec): '), write(D), nl.
+
+max_length([],N) :- N >= 0.
+max_length([First | L],N1) :- N1 > 0, N is N1 - 1, max_length(L,N).
+
+reachable(S,[]) :- initial_state(S).
+/* This rule is for the regular part of the assignment */
+reachable(S2, [M|List]) :- reachable(S1,List), legal_move(S2,M,S1).   
+
+/* The following rule is for the bonus question only: remove comments
+   and write your own rules to implement the predicate useless(M,List). 
+
+reachable(S2, [M | ListOfActions]) :- reachable(S1,ListOfActions),
+                    legal_move(S2,M,S1),
+                    not useless(M,ListOfActions).
+*/
+
+legal_move([A|S], A, S) :- poss(A,S).
+initial_state([]).
+
+/*------------ Precondition Axioms------------------- */
+	% write here your rules expressing when actions are possible
+poss(load(B,V,L),S):- vehicle(V),  at(V,L,S), at(B,L,S),unloaded(B,S), not vehicle(B).
+poss(unload(B,V,L),S):- vehicle(V), loaded(B,S), in(B,V,S), at(V,L,S), not vehicle(B).
+poss(drive(T,From,To,C),S):- truck(T), inCity(From,C), inCity(To,C), at(T,From,S).
+%poss(fly(B,From,To),S):- airplane(B), airport(From), airport(To), inCity(From, C), inCity(To, C2), not C=C2, at(B,From,S).
+
+
+
+/*----------- Successor State Axioms-------------- */
+	% write here your rules expressing effects of actions 
+in(B,V,[load(B,V,L)|S]).
+in(B,V,[A|S]):- not A = unload(B,V,_), in(B,V,S).
+ 
+loaded(B,[load(B,_,_)|S]).
+loaded(B,[A|S]):- not A = unload(B,_,_), loaded(B,S).
+
+unloaded(B,[]):-at(B,_,[]).
+unloaded(B,[unload(B,_,_)|S]).
+unloaded(B,[A|S]):- not A = load(B,_,_), unloaded(B,S).
+
+at(X,Loc,[drive(X,_,Loc,_)|S]). 
+at(X,Loc,[fly(X,_,Loc)|S]).
+at(X,Loc,[unload(X,_,Loc)|S]).
+at(X,Loc,[load(X,_,Loc)|S]).
+at(X,Loc,S):- in(X,V,S), at(V,Loc,S).
+%at(X,Loc,[A|S]):-   not ( A = drive(X,_,Loc2, _),not Loc2 = Loc),
+%                    not ( A = fly(X,_,Loc2),not Loc2 = Loc ),
+%                    write("calls"),
+%                    at(X,Loc,S).
+at(X,Loc,[A|S]):-   not A = drive(X,_,Loc2,_),
+                    not A = fly(X,_,Loc3),
+                    not A = unload(X,_,Loc4), 
+                    not A = load(X,_,Loc5),
+                    not in(X,V,[A|S]), 
+                    at(X,Loc,S).
+
+:- [initLogistics].
+
+/* This command loads the file  initLogistics.pl  with the initial and goal states.
+  Keep it in the same folder as this file. Do not copy content here, because TA
+  will test your program using another setting (with different trucks, airplanes)
+*/
+
+
+/* ----------------- Heuristics To Cut Search ------------------ */
+	% BONUS: write here your rules implementing the predicate "useless" %
