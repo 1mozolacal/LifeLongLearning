@@ -1,0 +1,10 @@
+** anything between {} need to be changed **
+
+Generate key
+ssh-keygen -t rsa -b 4096 -C "{person@whatever.stuff}"
+
+Test Key:
+ssh -T git@github.com
+
+Navigate into repo and run:
+git remote set-url origin git@github.com:{username}/{your-repository}.git
