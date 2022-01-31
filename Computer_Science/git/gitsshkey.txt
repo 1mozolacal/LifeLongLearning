@@ -3,8 +3,15 @@
 Generate key
 ssh-keygen -t rsa -b 4096 -C "{person@whatever.stuff}"
 
+Add Public key to Git:
+Navigate to: 
+  settings > SSH and GPG keys
+
 Test Key:
 ssh -T git@github.com
+
+Cloning:
+Remember to use the "ssh" link instead of the default http link.
 
 Navigate into repo and run:
 git remote set-url origin git@github.com:{username}/{your-repository}.git
