@@ -1,0 +1,12 @@
+# Markdown
+
+Using '#' for titles. The more hashtags the smaller the title.
+
+Use the backtick chacter for code blocks '`'. One for inline, 3 for blocks.
+
+For images the formate is
+`![description](URL)`
+For Github urls
+`(<repo url>/blob/<branch>/<directory in repo>?raw=true)`
+Example:
+> `![all](https://github.com/1mozolacal/Machine_Learning_Challenge/blob/main/media/all.PNG?raw=true)`
