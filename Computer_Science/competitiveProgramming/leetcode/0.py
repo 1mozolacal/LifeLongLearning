@@ -1,6 +1,6 @@
 #this is a wrapper that will run your python solution class
 
-my_import = __import__('400-Nth Digit')
+my_import = __import__('836-Rectangle Overlap')
 
 my_solution = my_import.Solution()
 test_cases = my_solution.__test_cases__()
@@ -10,3 +10,17 @@ for input,answer in test_cases:
         print("correct!")
     else:
         print(f"Expected {answer}. Got {result}. With input {input}")
+
+
+# Example
+# class Solution:
+#     def NAME(self, n: int) -> int:
+#         pass
+    
+#     def __test_cases__(self):
+#         return [
+#             ({"varible":"value"},'expected answer')
+#         ]
+#     def __run__(self, **kwargs):
+#         return self.NAME(**kwargs)
+        
