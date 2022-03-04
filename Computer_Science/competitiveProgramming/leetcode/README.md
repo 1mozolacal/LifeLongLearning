@@ -5,9 +5,11 @@ I am posting my solution to public coding problem such as the ones found on leet
 Complete
 - 17
 - 88
+- 104
 - 171
 - 400
 - 836
+- 1669
 
 Incomplete
 - None
