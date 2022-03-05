@@ -1,5 +1,6 @@
-import math
-import re
+# Runtime: 36 ms, faster than 98.06% of Python3 online submissions for Maximum Depth of Binary Tree.
+# Memory Usage: 16.4 MB, less than 7.05% of Python3 online submissions for Maximum Depth of Binary Tree.
+
 
 # Definition for a binary tree node.
 class TreeNode:
