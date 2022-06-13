@@ -4,12 +4,15 @@ I am posting my solution to public coding problem such as the ones found on leet
 
 Complete
 - 17
+- 66
 - 88
+- 100
 - 104
 - 171
 - 400
+- 799
 - 836
 - 1669
 
 Incomplete
-- None
+- 11
