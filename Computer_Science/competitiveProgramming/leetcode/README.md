@@ -4,10 +4,12 @@ I am posting my solution to public coding problem such as the ones found on leet
 
 Complete
 - 17
+- 24
 - 66
 - 88
 - 100
 - 104
+- 112
 - 171
 - 400
 - 799
