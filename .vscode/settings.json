@@ -1,0 +1,7 @@
+{
+    "bitburner.authToken": "A70ZFnTEDod9WW7bLbeyWwgnwaW+I+LiAawZwn4Nt+hX4xQAiGB0ryhAZIgyE3eu",
+    "bitburner.scriptRoot": "./Computer_Science/bitBurner",
+    "bitburner.showPushSuccessNotification": true,
+    "bitburner.showFileWatcherEnabledNotification": true,
+    "bitburner.fileWatcher.enable": true
+}
