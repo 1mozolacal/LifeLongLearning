@@ -1,0 +1,3 @@
+function [P] = reduce(A)
+    both = [A | eye]
+   
