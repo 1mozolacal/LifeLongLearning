@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { findMachinesFromHome, hackMachine, formatMoney } from 'utils.js'
+import { findMachinesFromHome, hackMachine, formatMoney } from 'utils/utils.js'
 
 export async function main(ns) {
     var topMachine = null

@@ -1,12 +1,12 @@
 /** @param {NS} ns */
-import {formatMoney} from 'utils.js' 
+import { formatMoney } from 'utils/utils.js'
 export async function main(ns) {
 
 	ns.disableLog('ALL')
 	ns.print("Starting...")
 
 	const symbols = ns.stock.getSymbols()
-	const minPurchase = ns.args.length >0 ? ns.args[0] * 1000000 : 10000000 //need to have atleast 10Million
+	const minPurchase = ns.args.length > 0 ? ns.args[0] * 1000000 : 10000000 //need to have atleast 10Million
 
 	while (true) {
 		var symbolRanking = []
@@ -31,7 +31,7 @@ export async function main(ns) {
 			if (rRank < 0 || purchasingPower < minPurchase) {
 				break
 			}
-			let amount = Math.min(Math.floor(ns.getPlayer().money / (ns.stock.getAskPrice(rSym)*1.02)), ns.stock.getMaxShares(rSym)-ns.stock.getPosition(rSym)[0])
+			let amount = Math.min(Math.floor(ns.getPlayer().money / (ns.stock.getAskPrice(rSym) * 1.02)), ns.stock.getMaxShares(rSym) - ns.stock.getPosition(rSym)[0])
 			let boughtAt = ns.stock.buyStock(rSym, amount)
 			if (boughtAt != 0) {
 				purchasingPower -= boughtAt * amount;

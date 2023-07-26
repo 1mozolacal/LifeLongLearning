@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { findMachinesFromHome } from 'utils.js'
+import { findMachinesFromHome } from 'utils/utils.js'
 
 export async function main(ns) {
 

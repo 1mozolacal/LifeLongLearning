@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { formatMoney } from 'utils.js'
+import { formatMoney } from 'utils/utils.js'
 export async function main(ns) {
 
     const symbols = ns.stock.getSymbols()

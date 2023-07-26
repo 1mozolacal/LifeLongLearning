@@ -1,5 +1,5 @@
 /** @param {NS} ns */
-import { canHackMachine, hackMachine } from 'utils.js'
+import { canHackMachine, hackMachine } from 'utils/utils.js'
 export async function main(ns) {
 
     const target = ns.args.length == 0 ?
