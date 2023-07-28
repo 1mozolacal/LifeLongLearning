@@ -17,8 +17,14 @@ export async function main(ns) {
                 case "Algorithmic Stock Trader I":
                     ns.run("contracts/algorithmic-stock-trader-I.js", 1, machine, contract)
                     break;
+                case "Algorithmic Stock Trader III":
+                    ns.run("contracts/algorithmic-stock-trader-III.js", 1, machine, contract)
+                    break;
+                case "Unique Paths in a Grid I":
+                    ns.run('contracts/unique-paths-in-a-grid-I.js', 1, machine, contract)
+                    break;
                 default:
-                    ns.alert("Does not have solution for >" + contractType + "<")
+                    ns.alert(`Does not have solution for >${contractType}< in ${machine}`)
             }
         }
     }

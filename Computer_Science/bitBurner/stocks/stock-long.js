@@ -1,9 +1,12 @@
-/** @param {NS} ns */
 import { formatMoney } from 'utils/utils.js'
+
+const logFile = 'stock-log.txt'
+
+/** @param {NS} ns */
 export async function main(ns) {
 
 	ns.disableLog('ALL')
-	ns.print("Starting...")
+	ns.write(logFile, "Starting...", 'w')
 
 	const symbols = ns.stock.getSymbols()
 	const minPurchase = ns.args.length > 0 ? ns.args[0] * 1000000 : 10000000 //need to have atleast 10Million
@@ -19,7 +22,7 @@ export async function main(ns) {
 			if (forecast < 0.5 && ns.stock.getPosition(sym)[0] > 0) {
 				const price = ns.stock.sellStock(sym, ns.stock.getPosition(sym)[0])
 				ns.print("selling: " + sym)
-				ns.write('stock-log.txt', `Sold: ${sym} at ${formatMoney(price)} [${ns.stock.getPosition(sym)[0]}]\n`, 'a')
+				ns.write(logFile, `Sold: ${sym} at ${formatMoney(price)} [${ns.stock.getPosition(sym)[0]}]\n`, 'a')
 			}
 		}
 
@@ -36,9 +39,10 @@ export async function main(ns) {
 			if (boughtAt != 0) {
 				purchasingPower -= boughtAt * amount;
 				ns.print(`Bought: ${rSym} at ${formatMoney(boughtAt)}`)
-				ns.write('stock-log.txt', `Bought: ${rSym} at ${formatMoney(boughtAt)} [${amount}]\n`, 'a')
+				ns.write(logFile, `Bought: ${rSym} at ${formatMoney(boughtAt)} [${amount}]\n`, 'a')
 			} else {
-				ns.print(`Couldn't buy ${rSym} with amount ${amount} current price is ${ns.stock.getAskPrice(rSym)}`)
+				ns.print(`Couldn't buy ${rSym} with amount ${amount} current price is ${ns.stock.getAskPrice(rSym)}\n`)
+				ns.write(logFile, `Couldn't buy ${rSym} with amount ${amount} current price is ${ns.stock.getAskPrice(rSym)}\n`, 'a')
 			}
 
 		}
